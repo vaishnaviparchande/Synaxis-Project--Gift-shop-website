@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift4U</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&family=Pacifico&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="Gift.css">
+    <!--Font Links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<!--NavBar-->
+<body id="home">
+    <nav class="navbar navbar-expand-lg sticky-nav ">
+        <div class=" container-fluid nav-container">
+            <img src="assets/logo2.png" alt="Gift4U Logo" class="logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-links">
+                <li class="nav-item">
+                    <form class="d-flex search-bar" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search for gift..." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+                      </form>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#home"><i class="fas fa-home"></i> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#footer"><i class="fa-solid fa-phone"></i> Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#wishlist"><i class="fas fa-heart"></i> Wishlist</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#cart"><i class="fas fa-shopping-cart"></i> Cart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="Account.html"><i class="fas fa-user"></i> Account</a>
+              </li>
+
+              </ul>
+
+            
+          </div>
+        </div>
+      </nav>
+
+      <!--Section Bar-->
+    <div class="section-bar">
+        <ul>
+            <li><a href="PersonaliseSection.html"><span class="material-symbols-outlined">edit</span> Personalized</a></li>
+            <li><a href="SpecialDaysSection.html"><span class="material-symbols-outlined">calendar_month</span> Special Days</a></li>
+            <li><a href="BirthdaySection.html"><span class="material-symbols-outlined">featured_seasonal_and_gifts</span> Birthday</a></li>
+            <li><a href="FlowersSection.html"><span class="material-symbols-outlined">local_florist</span> Flowers</a></li>
+            <li><a href="CakesSection.html"><span class="material-symbols-outlined">cake</span> Cakes</a></li>
+            <li><a href="AnniverserySection.html"><span class="material-symbols-outlined">favorite</span> Anniversary</a></li>
+            <li><a href="FestivalSection.html"><span class="material-symbols-outlined">festival</span> Festivals</a></li>
+            <li><a href="BulkGiftSection.html"><i class="fa-solid fa-gifts"></i> Bulk/Corp. Gifts</a></li>
+        </ul>
+    </div>
+
+    <!--Header Section-->
+    <header>
+        
+        <div class="hero">
+            
+            <div class="slideshow-container">
+                
+                <div class="slide">
+                    
+                    <img src="assets/header1.webp" alt="Slide 1">
+                    <div class="text-overlay">Discover Unique Gifts for Every Occasion</div>
+                </div>
+                <div class="slide">
+                    <img src="assets/header2.webp" alt="Slide 2">
+                    <div class="text-overlay">Find the Perfect Gift for Your Loved Ones</div>
+                </div>
+                <div class="slide">
+                    <img src="assets/header3.webp" alt="Slide 3">
+                    <div class="text-overlay">Make Every Celebration Special</div>
+                </div>
+                <div class="slide">
+                    <img src="assets/header4.webp" alt="Slide 4">
+                    <div class="text-overlay">Personalized Gifts for a Personal Touch</div>
+                </div>
+                <div class="slide">
+                    <img src="assets/header5.webp" alt="Slide 5">
+                    <div class="text-overlay">Surprise Your Friends and Family</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+    </header>
+
+    <!--Categories-->
+    <main>
+        <div class="categories">
+            <div class="category-item">
+                <a href="Occasion.html"><img src="assets/occasion.avif" alt="Category 1"></a>
+                <p>Occasion</p>
+            </div>
+            <div class="category-item">
+                <a href="TypeOfGift.html"><img src="assets/typeogft.jpeg" alt="Category 2"></a>
+                <p>Type of gift</p>
+            </div>
+            <div class="category-item">
+                <a href="Receipent.html"><img src="assets/recipent.jpg" alt="Category 3"></a>
+                <p>By recipient</p>
+            </div>
+            <div class="category-item">
+                <a href="Theme.html"><img src="assets/theme.jpeg" alt="Category 4"></a>
+                <p>Theme</p>
+            </div>
+            <div class="category-item">
+                <a href="PriceRange.html"><img src="assets/rupee.jpeg" alt="Category 5"></a>
+                <p>Price range</p>
+            </div>
+           
+        </div>
+        <h2 style="text-align: center; color: black">Grab These Deals Before They're Gone!</h2>
+        <div class="products">
+            <div class="product-card">
+                <img src="assets/prod1m.webp" alt="Product 1">
+                <h3>Boss Lady Rosy Blooms</h3>
+                <p>bouquet featuring aqua pink and red roses...</p>
+                <p style="text-decoration: line-through;opacity: 0.5;">₹3000</p>
+                <p>Price:₹1500<br><span class="discount">50% off</span></p>
+                <button class="primary-button">Buy Now</button>
+                
+            </div>
+            <div class="product-card">
+                <img src="assets/prod2m.webp" alt="Product 2">
+                <h3>Love Personalized Anniversary Hamper</h3>
+                <p>discover classy velvet jewellery organizer...</p>
+                <p style="text-decoration: line-through;opacity: 0.5;">₹5000</p>
+                <p>Price: ₹2500<br><span class="discount">50% off</span></p>
+                <button class="primary-button">Buy Now</button>
+                
+            </div>
+            <div class="product-card">
+                <img src="assets/prod3m.jpg" alt="Product 2">
+                <h3>Personalized Cutest Little Angel Hamper </h3>
+                <p>hamper of a silicone butterfly bracelet...</p>
+                <p style="text-decoration: line-through;opacity: 0.5;">₹3000</p>
+                <p>Price: ₹2550<br><span class="discount">15% off</span></p>
+                <button class="primary-button">Buy Now</button>
+                
+            </div>
+            <div class="product-card">
+                <img src="assets/prod4m.webp" alt="Product 2">
+                <h3>Cute Personalized Kids T-Shirt</h3>
+                <p>The cutest little tee for your little ones...</p>
+                <p style="text-decoration: line-through;opacity: 0.5;">₹2000</p>
+                <p>Price: ₹500<br><span class="discount">15% off</span></p>
+                <button class="primary-button">Buy Now</button>
+                
+            </div>
+            <div class="product-card">
+                <img src="assets/prod5m.jpg" alt="Product 2">
+                <h3>Delight Personalized Love Hamper</h3>
+                <p>Treat your lovely lady to a luxurious anniversary...</p>
+                <p style="text-decoration: line-through;opacity: 0.5;">₹6000</p>
+                <p>Price: ₹4800<br><span class="discount">20% off</span></p>
+                <button class="primary-button">Buy Now</button>
+                
+            </div>
+            <div class="product-card">
+                <img src="assets/prod6m.webp" alt="Product 2">
+                <h3>Blue Gold Dial Metal Strap Watch For Men</h3>
+                <p>The watch has a chronograph look with a stunning...</p>
+                <p style="text-decoration: line-through;opacity: 0.5;">₹2000</p>
+                <p>Price: ₹1600<br><span class="discount">20% off</span></p>
+                <button class="primary-button">Buy Now</button>
+                
+            </div>
+            <div class="product-card">
+                <img src="assets/Prod7m.webp" alt="Product 2">
+                <h3>Black Canvas Crossbody Tote Bag</h3>
+                <p>Carrying your essentials and everyday stuff just got easier ...</p>
+                <p style="text-decoration: line-through;opacity: 0.5;">₹4000</p>
+                <p>Price: ₹2800<br><span class="discount">30% off</span></p>
+                <button class="primary-button">Buy Now</button>
+                
+            </div>
+            <div class="product-card">
+                <img src="assets/prod8m.webp" alt="Product 2">
+                <h3>Personalized Birthday Celebration Swinging</h3>
+                <p>Personalized Birthday Celebration Swinging Metal Planter...</p>
+                <p style="text-decoration: line-through;opacity: 0.5;">₹2000</p>
+                <p>Price: ₹1700<br><span class="discount">15% off</span></p>
+                <button class="primary-button">Buy Now</button>
+                
+            </div>
+            <div class="product-card">
+                <img src="assets/prod9m.jpeg" alt="Product 2">
+                <h3>Stylish Yellow One piece</h3>
+                <p>Give your closet a makeover with this stylish...</p>
+                <p style="text-decoration: line-through;opacity: 0.5;">₹2000</p>
+                <p>Price: ₹1000<br><span class="discount">50% off</span></p>
+                <button class="primary-button">Buy Now</button>
+                
+            </div>
+            <div class="product-card">
+                <img src="assets/prod10m.webp" alt="Product 2">
+                <h3>Birthday Personalized Leather Journal</h3>
+                <p>A birthday marks a new journey, make it one filled with novel ideas...</p>
+                <p style="text-decoration: line-through;opacity: 0.5;">₹2000</p>
+                <p>Price: ₹1000<br><span class="discount">50% off</span></p>
+                <button class="primary-button">Buy Now</button>
+                
+            </div>
+        </div>
+    </main>
+
+        <!--Footer-->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about-us">
+                    <h3>About Us</h3>
+                    <p>Welcome to Gift Shop, Free shipping all over India your one-stop destination for all things wonderful and unique.
+                         We specialize in offering a curated selection of gifts for every occasion, from 
+                         birthdays to anniversaries and everything in between. Our mission is to make
+                          gifting a memorable experience by providing high-quality, thoughtful products 
+                          that your loved ones will cherish. Explore our collection and find the perfect 
+                          gift that speaks from the heart. Our dedicated team is here to ensure you have 
+                          a delightful shopping experience.</p>
+                </div>
+                <div class="footer-section contact-us">
+                    <h3>Contact Us</h3>
+                    <p>Email: <a href="mailto:info@giftshop.com">info@giftshop.com</a></p>
+                    <p>Phone: +123 456 7890</p>
+                    <div class="footer-socials">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section feedback">
+                    <h3>Feedback</h3>
+                    <form action="#" method="post">
+                        <textarea name="feedback" rows="4" placeholder="Write your feedback here..." required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="footer-section newsletter">
+                    <h3>Newsletter</h3>
+                    <form action="#" method="post">
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Gift4U. All rights reserved.</p>
+            <a href="#home"><button class="back-to-top">Back To Top</button></a>
+        </div>
+    </footer>
+
+    <!--Chatbox-->
+    <div class="chat-icon">
+        <i class="fas fa-comments"></i>
+    </div>
+
+    <div class="chat-popup" id="chatPopup">
+        <form action="#" class="form-container">
+            <h1>Live Chat</h1>
+            <label for="msg"><b>Message</b></label>
+            <textarea placeholder="Type your message.." name="msg" required></textarea>
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeChat()">Close</button>
+        </form>
+    </div>
+
+    <script >
+        // Slideshow functionality
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+        
+        // Chat functionality
+        const chatIcon = document.querySelector('.chat-icon');
+        const chatPopup = document.querySelector('.chat-popup');
+        const closeChatBtn = chatPopup.querySelector('.cancel');
+        
+        chatIcon.addEventListener('click', () => {
+            chatPopup.style.display = 'block';
+        });
+        
+        closeChatBtn.addEventListener('click', () => {
+            chatPopup.style.display = 'none';
+        });
+        
+        </script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

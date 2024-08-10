@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f9fcff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    height: 500px;
+    width: 500px;
+    background-color: #e2a6a6;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #ff1744;
+}
+
+.sign-in-form h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.sign-in-form p {
+    margin: 10px 0;
+}
+
+.sign-in-form a {
+    color: #f5edef;
+    text-decoration: none;
+}
+
+.sign-in-form a:hover {
+    text-decoration: underline;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group .toggle-password {
+    position: absolute;
+    right: 330px;
+    top: 380px;
+    cursor: pointer;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: #ff1744;
+    color: white;
+}
+
+.forgot-password {
+    display: block;
+    margin: 10px 0;
+}
+
+.or-sign-in {
+    margin: 20px 0;
+    font-weight: bold;
+    color: #fdf7f7;
+}
+
+.social-login .btn {
+    display: inline-block;
+    width: auto;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.btn-otp {
+    background-color: #ff1744;
+    color: white;
+}
+
+.btn-google {
+    background-color: #db4437;
+    color: white;
+}
+
+.btn-facebook {
+    background-color: #3b5998;
+    color: white;
+}
+.logo img{
+    width: 10rem;
+}
+</style>
+<body>
+
+    <div class="container">
+        <div class="logo">
+            <img src="assets/logo2.png">
+        </div>
+        <div class="sign-in-form">
+            <h2>Sign in</h2>
+            <p>Don't have an account? <a href="#">Sign up</a></p>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email ID or Mobile Number *</label>
+                    <input type="text" id="email" placeholder="Enter Email ID or Mobile Number" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password *</label>
+                    <input type="password" id="password" placeholder="At least 6 characters" required>
+                    
+                </div>
+                <button type="submit" class="btn btn-primary">SIGN IN</button>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+            </form>
+            <div class="or-sign-in">or sign in</div>
+            <div class="social-login">
+                <button class="btn btn-otp">VIA OTP</button>
+                <button class="btn btn-google">GOOGLE</button>
+                <button class="btn btn-facebook">FACEBOOK</button>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
